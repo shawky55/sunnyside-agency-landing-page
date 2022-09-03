@@ -1,0 +1,232 @@
+/*
+font-family: 'Barlow',
+sans-serif;
+font-family: 'Fraunces',
+serif;
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 113%;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+button {
+  border: none;
+  outline: 0;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+*::before,
+*::after {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+.transformBrand {
+  background-image: url(/images/desktop/image-transform.jpg);
+}
+
+.standout {
+  background-image: url(/images/desktop/image-stand-out.jpg);
+}
+
+.photographyImage {
+  background-image: url(/images/desktop/image-photography.jpg);
+}
+
+.graphicDesignImage {
+  background-image: url(/images/desktop/image-graphic-design.jpg);
+}
+
+.image-box {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 0.7rem;
+}
+
+header {
+  height: 850px;
+  background-image: url("/images/desktop/image-header.jpg");
+  background-size: cover;
+  background-position: bottom center;
+}
+header .logo {
+  width: 9rem;
+}
+header nav {
+  padding: 1.8rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  gap: 2.6rem;
+  justify-content: space-evenly;
+  align-items: center;
+}
+header nav ul li {
+  font-weight: 600;
+  font-family: "Barlow", sans-serif;
+  font-size: 1rem;
+}
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.contact-button {
+  padding: 1rem 1.8rem;
+  font-size: 14px;
+  border-radius: 41px;
+  font-weight: 700;
+  font-family: "Fraunces", serif;
+  color: hsl(212deg, 27%, 19%);
+}
+
+.main-heading {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  text-align: center;
+  font-size: 3.4rem;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+  color: white;
+  font-weight: 900;
+  font-family: "Fraunces", serif;
+  letter-spacing: 7px;
+}
+
+.arrow-downIcon {
+  margin: 2rem auto;
+  width: 35px;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.services .image-box img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.services .text-box {
+  padding: 150px 150px 140px 150px;
+}
+.services .text-box h2 {
+  font-size: 2.5rem;
+  color: hsl(212deg, 27%, 19%);
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  word-spacing: -1px;
+  letter-spacing: 2px;
+  line-height: 1.4;
+}
+.services .text-box p {
+  color: hsl(232deg, 10%, 55%);
+  line-height: 1.8;
+  margin-top: 1.7rem;
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+}
+.services .text-box a {
+  text-transform: uppercase;
+  margin-top: 1.8rem;
+  display: block;
+  font-weight: 900;
+  font-family: "Fraunces", serif;
+  letter-spacing: -1px;
+  word-spacing: 4px;
+  font-size: 1rem;
+  position: relative;
+  color: hsl(212deg, 27%, 19%);
+}
+.services .text-box a::before {
+  content: "";
+  height: 7px;
+  opacity: 0.6;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 25%;
+  background-color: hsl(51deg, 100%, 49%);
+}
+
+.graphicDesignImage,
+.photography {
+  height: 604px;
+}/*# sourceMappingURL=main.css.map */

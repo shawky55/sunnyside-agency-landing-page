@@ -1,0 +1,143 @@
+/*
+font-family: 'Barlow',
+sans-serif;
+font-family: 'Fraunces',
+serif;
+*/
+@import './dist/_variables';
+@import './dist/reset';
+@import './dist/backgrounds';
+
+.container {
+    margin: 0 auto;
+    padding: 0 .7rem;
+}
+
+header {
+    height: 850px;
+
+    background: {
+        image: url('/images/desktop/image-header.jpg');
+        size: cover;
+        position: bottom center;
+    }
+
+    .logo {
+        width: 9rem;
+    }
+
+    nav {
+        padding: 1.8rem 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            gap: 2.6rem;
+            justify-content: space-evenly;
+            align-items: center;
+
+            li {
+                font-weight: 600;
+                font-family: $barlow-font;
+                font-size: 1rem;
+
+                a {
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+.contact-button {
+    padding: 1rem 1.8rem;
+    font-size: 14px;
+    border-radius: 41px;
+    font-weight: 700;
+    font-family: $frnunces-font;
+    color: hsl(212deg, 27%, 19%);
+}
+
+.main-heading {
+    width: max-content;
+    text-align: center;
+    font-size: 3.4rem;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+    color: white;
+    font-weight: 900;
+    font-family: $frnunces-font;
+    letter-spacing: 7px;
+}
+
+.arrow-downIcon {
+    margin: 2rem auto;
+    width: 35px;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    .image-box img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .text-box {
+        padding: 150px 150px 140px 150px;
+
+        h2 {
+            font-size: 2.5rem;
+            color: $Very-dark-desaturated-blue;
+            font-family: $frnunces-font;
+            font-weight: 900;
+            word-spacing: -1px;
+            letter-spacing: 2px;
+            line-height: 1.4;
+        }
+
+        p {
+            color: $Dark-grayish-blue;
+            line-height: 1.8;
+            margin-top: 1.7rem;
+            font-family: $barlow-font;
+            font-weight: 600;
+            font-size: 1rem;
+
+        }
+
+        a {
+            text-transform: uppercase;
+            margin-top: 1.8rem;
+            display: block;
+            font-weight: 900;
+            font-family: $frnunces-font;
+            letter-spacing: -1px;
+            word-spacing: 4px;
+            font-size: 1rem;
+            position: relative;
+            color: $Very-dark-desaturated-blue;
+        }
+
+        a::before {
+            content: '';
+            height: 7px;
+            opacity: .6;
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 25%;
+            background-color: $Yellow;
+        }
+    }
+
+}
+.graphicDesignImage,
+.photography{
+    height: 604px;
+}
