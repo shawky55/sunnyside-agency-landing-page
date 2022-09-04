@@ -1,9 +1,3 @@
-/*
-font-family: 'Barlow',
-sans-serif;
-font-family: 'Fraunces',
-serif;
-*/
 *,
 *::before,
 *::after {
@@ -88,6 +82,11 @@ select {
     scroll-behavior: auto !important;
   }
 }
+.image-box {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .transformBrand {
   background-image: url(/images/desktop/image-transform.jpg);
 }
@@ -96,17 +95,12 @@ select {
   background-image: url(/images/desktop/image-stand-out.jpg);
 }
 
-.photographyImage {
+.photography-section {
   background-image: url(/images/desktop/image-photography.jpg);
 }
 
-.graphicDesignImage {
+.graphicDesign-section {
   background-image: url(/images/desktop/image-graphic-design.jpg);
-}
-
-.image-box {
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .container {
@@ -115,7 +109,7 @@ select {
 }
 
 header {
-  height: 850px;
+  height: 48rem;
   background-image: url("/images/desktop/image-header.jpg");
   background-size: cover;
   background-position: bottom center;
@@ -145,17 +139,7 @@ header nav ul li a {
   color: white;
   text-decoration: none;
 }
-
-.contact-button {
-  padding: 1rem 1.8rem;
-  font-size: 14px;
-  border-radius: 41px;
-  font-weight: 700;
-  font-family: "Fraunces", serif;
-  color: hsl(212deg, 27%, 19%);
-}
-
-.main-heading {
+header .main-heading {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
@@ -169,24 +153,33 @@ header nav ul li a {
   letter-spacing: 7px;
 }
 
-.arrow-downIcon {
-  margin: 2rem auto;
-  width: 35px;
+.contact-button {
+  padding: 1rem 1.8rem;
+  font-size: 14px;
+  border-radius: 41px;
+  font-weight: 700;
+  font-family: "Fraunces", serif;
+  color: hsl(212deg, 27%, 19%);
 }
 
-.services {
+.arrow-downIcon {
+  margin: 2rem auto;
+  width: 3rem;
+}
+
+.services-section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
-.services .image-box img {
+.services-section .image-box img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.services .text-box {
-  padding: 150px 150px 140px 150px;
+.services-section .text-box {
+  padding: 9rem 9rem 8rem 9rem;
 }
-.services .text-box h2 {
+.services-section .text-box h2 {
   font-size: 2.5rem;
   color: hsl(212deg, 27%, 19%);
   font-family: "Fraunces", serif;
@@ -195,7 +188,7 @@ header nav ul li a {
   letter-spacing: 2px;
   line-height: 1.4;
 }
-.services .text-box p {
+.services-section .text-box p {
   color: hsl(232deg, 10%, 55%);
   line-height: 1.8;
   margin-top: 1.7rem;
@@ -203,7 +196,7 @@ header nav ul li a {
   font-weight: 600;
   font-size: 1rem;
 }
-.services .text-box a {
+.services-section .text-box a {
   text-transform: uppercase;
   margin-top: 1.8rem;
   display: block;
@@ -215,7 +208,7 @@ header nav ul li a {
   position: relative;
   color: hsl(212deg, 27%, 19%);
 }
-.services .text-box a::before {
+.services-section .text-box a::before {
   content: "";
   height: 7px;
   opacity: 0.6;
@@ -225,8 +218,131 @@ header nav ul li a {
   width: 25%;
   background-color: hsl(51deg, 100%, 49%);
 }
+.services-section .text-box a:hover {
+  opacity: 0.6;
+}
 
-.graphicDesignImage,
-.photography {
-  height: 604px;
+.graphicDesign-section,
+.photography-section {
+  height: 43rem;
+  display: flex;
+  align-items: flex-end;
+  padding: 4.5rem 11rem;
+  text-align: center;
+}
+.graphicDesign-section .content h2,
+.photography-section .content h2 {
+  margin-bottom: 1.6rem;
+  font-weight: 900;
+  font-family: "Fraunces", serif;
+}
+.graphicDesign-section .content p,
+.photography-section .content p {
+  font-family: "Barlow", sans-serif;
+}
+
+.graphicDesign-section .content h2 {
+  color: hsl(167deg, 40%, 24%);
+}
+.graphicDesign-section .content p {
+  color: hsl(167deg, 40%, 24%);
+}
+
+.photography-section .content h2 {
+  color: hsl(198deg, 62%, 26%);
+}
+.photography-section .content p {
+  color: hsl(198deg, 62%, 26%);
+}
+
+.testimonials-section {
+  padding: 8.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.testimonials-section .main-heading {
+  font-weight: 900;
+  font-family: "Fraunces", serif;
+  color: hsl(232deg, 10%, 55%);
+  text-align: center;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.testimonials-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem;
+  padding: 5rem 0;
+}
+
+.client-testimonials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  text-align: center;
+}
+.client-testimonials .client-image {
+  width: 5rem;
+  border-radius: 50%;
+}
+.client-testimonials p {
+  font-weight: 600;
+  color: hsl(213deg, 9%, 39%);
+}
+.client-testimonials .client-name {
+  color: hsl(212deg, 27%, 19%);
+  font-family: "Fraunces", serif;
+}
+.client-testimonials .client-role {
+  color: hsl(232deg, 10%, 55%);
+  font-family: "Barlow", sans-serif;
+  margin-top: 10px;
+  display: inline-block;
+}
+.client-testimonials .client-message {
+  font-family: "Barlow", sans-serif;
+  line-height: 1.7;
+}
+
+.image-gallery-section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+footer {
+  padding: 4rem 0;
+  text-align: center;
+  background-color: hsl(168deg, 34%, 41%);
+}
+footer .container {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  color: hsl(167deg, 40%, 24%);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+footer .container .footer-logo {
+  margin: 0 auto;
+  width: 70%;
+}
+footer .container .about {
+  display: flex;
+  gap: 2rem;
+}
+footer .container .about div {
+  font-family: "Fraunces", serif;
+}
+footer .container .socialMedia-container {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-evenly;
+}
+footer .container .socialMedia-container .social-logo {
+  width: 1.5rem;
+  height: 1.5rem;
 }/*# sourceMappingURL=main.css.map */

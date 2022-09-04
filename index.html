@@ -9,6 +9,15 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
     <title>Frontend Mentor | Sunnyside agency landing page</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -39,7 +48,7 @@
       </div>
     </header>
     <main>
-      <div class="services">
+      <div class="services-section">
         <div class="text-box">
           <h2>Transform your brand</h2>
           <p>
@@ -65,33 +74,102 @@
           <a href="#">learn more</a>
         </div>
 
-        <div class="image-box graphicDesignImage">
+        <div class="image-box graphicDesign-section">
           <div class="textImage">
-            <h2>Graphi Design</h2>
+            <div class="content">
+              <h2>Graphi Design</h2>
+              <p>
+                Graphic design Great design makes you memorable. We deliver
+                artwork that underscores your brand message and captures
+                potential clients’ attention.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="image-box photography-section">
+          <div class="content">
+            <h2>Photography</h2>
             <p>
-              Graphic design Great design makes you memorable. We deliver
-              artwork that underscores your brand message and captures potential
-              clients’ attention.
+              Increase your credibility by getting the most stunning,
+              high-quality photos that improve your business image.
             </p>
           </div>
         </div>
-        <div class="image-box photographyImage">
-          <h2>Photography</h2>
-          <p>
-            Increase your credibility by getting the most stunning, high-quality
-            photos that improve your business image.
-          </p>
-        </div>
       </div>
-    </main>
+      <section class="testimonials-section">
+        <h1 class="main-heading">Client testimonials</h1>
+        <div class="testimonials-container">
+          <div class="client-testimonials">
+            <img
+              src="/images/image-emily.jpg"
+              alt="emily image"
+              class="client-image"
+            />
+            <p class="client-message">
+              We put our trust in Sunnyside and they delivered, making sure our
+              needs were met and deadlines were always hit
+            </p>
+            <span class="client-info">
+              <h3 class="client-name">Emily R.</h3>
+              <span class="client-role">Marketing Director</span>
+            </span>
+          </div>
 
-    <!--   Client
-    testimonials We put our trust in Sunnyside and they delivered, making sure
-    our needs were met and deadlines were always hit. Emily R. Marketing
-    Director Sunnyside’s enthusiasm coupled with their keen interest in our
-    brand’s success made it a satisfying and enjoyable experience. Thomas S.
-    Chief Operating Officer Incredible end result! Our sales increased over 400%
-    when we worked with Sunnyside. Highly recommended! Jennie F. Business Owner
-    About Services Projects Contact -->
+          <div class="client-testimonials">
+            <img
+              src="/images/image-thomas.jpg"
+              alt="emily image"
+              class="client-image"
+            />
+            <p class="client-message">
+              Director Sunnyside’s enthusiasm coupled with their keen interest
+              in our brand’s success made it a satisfying and enjoyable
+              experience.
+            </p>
+            <span class="client-info">
+              <h3 class="client-name">Thomas S.</h3>
+              <span class="client-role">Chief Operating Officer</span>
+            </span>
+          </div>
+          <div class="client-testimonials">
+            <img
+              src="/images/image-jennie.jpg"
+              alt="emily image"
+              class="client-image"
+            />
+            <p class="client-message">
+              Incredible end result! Our sales increased over 400% when we
+              worked with Sunnyside. Highly recommended!
+            </p>
+            <span class="client-info">
+              <h3 class="client-name">Jennie F.</h3>
+              <span class="client-role">Business Owner</span>
+            </span>
+          </div>
+        </div>
+      </section>
+      <section class="image-gallery-section">
+        <img src="/images/desktop/image-gallery-cone.jpg" alt="" />
+        <img src="/images/desktop/image-gallery-milkbottles.jpg" alt="" />
+        <img src="/images/desktop/image-gallery-orange.jpg" alt="" />
+        <img src="/images/desktop/image-gallery-sugarcubes.jpg" alt="" />
+      </section>
+      <footer>
+        <div class="container">
+          <img src="/images/logo.svg" alt="" class="footer-logo" />
+          <div class="about">
+            <div>About</div>
+            <div>Services</div>
+            <div>Projects</div>
+          </div>
+          <div class="socialMedia-container">
+            <ion-icon name="logo-facebook" class="social-logo"></ion-icon>
+            <ion-icon name="logo-instagram" class="social-logo"></ion-icon>
+            <ion-icon name="logo-pinterest" class="social-logo"></ion-icon>
+            <ion-icon name="logo-twitter" class="social-logo"></ion-icon>
+          </div>
+        </div>
+      </footer>
+    </main>
   </body>
 </html>
